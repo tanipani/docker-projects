@@ -1,0 +1,22 @@
+service_a:
+    build: ./serviceA
+    links:
+        - service_b:service_b_local
+    ports:
+        - "8080:8080"
+service_b:
+    build: ./serviceB
+    ports:
+        - "8081:8080"
+
+# This is the compose file for EC2 instance
+# service_a:
+#     image: blupos/dockercomposeapplication_service_a
+#     links:
+#         - service_b:service_b_local
+#     ports:
+#         - "80:8080"
+# service_b:
+#     image: blupos/dockercomposeapplication_service_b
+#     ports:
+#         - "8081:8080"

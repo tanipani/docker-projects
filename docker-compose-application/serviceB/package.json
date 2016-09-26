@@ -1,0 +1,14 @@
+{
+  "name": "appA",
+  "version": "1.0.0",
+  "description": "test app communication",
+  "author": "TU",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.65.0"
+  }
+}
